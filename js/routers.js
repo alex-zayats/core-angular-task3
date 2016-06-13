@@ -1,12 +1,11 @@
- var app = angular.module('routers', ['ui.router', 'ui.bootstrap', 'ui.bootstrap.tpls', 'ct.ui.router.extras.core', 'ct.ui.router.extras.sticky']);
+ var app = angular.module('routers', ['ui.router', 'ui.bootstrap', 'ui.bootstrap.tpls']);
 
  app.config(function($stateProvider, $urlRouterProvider) {
      $stateProvider
      .state('index', {
          url: "/products",
          templateUrl: "products-list.html",
-         controller: "productsCtrl",
-         sticky: true
+         controller: "productsCtrl"
      })
      .state('product-details', {
          url: "/product",
@@ -14,8 +13,7 @@
          controller: "detailsController",
          params: {
            productDetails: null,
-         },
-         sticky: true
+         }
       })
      .state("index.product-popup", {
         url: "/product-popup",
@@ -24,8 +22,7 @@
         onReactivate: showPopup,
         params: {
            productDetails: null,
-        },
-        sticky: true
+        }
      });
 
      $urlRouterProvider.otherwise("/products");
