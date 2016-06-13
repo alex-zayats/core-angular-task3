@@ -1,0 +1,42 @@
+body{
+	background-color: #cdcdcd;
+}
+.main-content{
+	width: 1000px;
+	margin: 0 auto;
+	.product-wrapper{
+		padding: 10px;
+		.product-item{
+			padding: 5px 10px;
+			text-align: center;
+			background-color: white;
+			border-radius: 5px;
+			img{
+				width: 200px;
+				margin-bottom: 15px;
+			}
+			.badge{
+				background-color: #9bd9f8;
+			}
+		}
+	}
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.modal-dialog{
+	.modal-body{
+		text-align: center;
+	}
+}
+.product-details{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 15px;
+	.product-img{
+		margin: 0 auto;
+	}
+}

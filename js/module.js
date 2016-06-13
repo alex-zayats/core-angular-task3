@@ -1,0 +1,1 @@
+angular.module('productsTask', ['ui.bootstrap', 'ui.bootstrap.tpls', 'routers']);

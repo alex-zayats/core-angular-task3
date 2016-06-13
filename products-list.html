@@ -1,0 +1,13 @@
+<div class="row-fluid main-content">
+      <div class="col-lg-3 product-wrapper" ng-repeat="product in products">
+        <div class="product-item">
+            <h4><a class="product-name bg-info" ui-sref="product-details({productDetails: product})">{{product.name}}</a></h4>
+            <img class="img-thumbnail" ng-src="{{product.imgUrl}}" alt="{{product.name}}">
+            <p>
+            	<a ui-sref="index.product-popup({productDetails: product})" class="btn btn-primary" role="button">Buy</a>
+            	<span class="badge">From {{product.minPrice}}$</span>
+            </p>
+        </div>
+      </div>
+    </div>
+</div>
